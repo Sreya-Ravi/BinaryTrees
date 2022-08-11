@@ -1,5 +1,5 @@
-# Trees
-The child repo: Trees, consists of solutions to all the Tree-related problem-solving questions solved from various coding platforms. It is one of the many child repos of the root repo: [masterDSA](https://github.com/Sreya-Ravi/masterDSA). 
+# Binary Trees
+The child repo: BinaryTrees, consists of solutions to all the BinaryTree-related problem-solving questions solved from various coding platforms. It is one of the many child repos of the root repo: [masterDSA](https://github.com/Sreya-Ravi/masterDSA). 
 
 <br/>
 
@@ -7,7 +7,8 @@ The child repo: Trees, consists of solutions to all the Tree-related problem-sol
 
 <br/>
 
-One new problem from a random topic will be published everyday, to its corresponding repo. To check for the --problem of the day-- and To access all other Data Structures and Algorithms, check out the master repo: --> [masterDSA](https://github.com/Sreya-Ravi/masterDSA).
+One new problem from a random topic will be published everyday to its corresponding repo. <br/>
+To check out the --problem of the day-- and to access all other Data Structures and Algorithms, check out the master repo: --> [masterDSA](https://github.com/Sreya-Ravi/masterDSA).
 
 ```
 function oneProblemWithSolutionWillBePublishedEveryDay(problem , solution)-->
