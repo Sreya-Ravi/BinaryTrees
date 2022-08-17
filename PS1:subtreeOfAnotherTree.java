@@ -52,32 +52,35 @@ The number of nodes in the subRoot tree is in the range [1, 1000].
  */
 
 class Solution {
-    ArrayList <TreeNode> arr = new ArrayList<>();
+ 
+ // An arraylist is declared as a class variable, thus it can be used across all the functions of the Solution class.
+    ArrayList <TreeNode> arr = new ArrayList<>(); 
+ 
+  // main function to find if a tree is a subtree of another tree(main tree).
     public boolean isSubtree(TreeNode root, TreeNode subRoot) {
         findRoots(root,subRoot);
-        // System.out.println(arr.size());
         for(int i=0;i<arr.size();i++){
-            // System.out.println(arr.get(i).val);
-            if(isSameTree(arr.get(i),subRoot)) return true;
+            if(isSameTree(arr.get(i),subRoot)) return true; 
+            // call isSameTree() for all nodes in the arraylist. 
+            // If anyone of them is true, return true, as we found a node in the main tree that is equal to the root node of the subtree.
         }
         return false;
     }
     
-    public void findRoots (TreeNode root, TreeNode subRoot){
+  // findRoots is a utility function to find all the nodes in the main tree whose data is equal to the data of the root node of the subtree.
+    public void findRoots (TreeNode root, TreeNode subRoot){    
         if(root==null) return;
-        if(root.val==subRoot.val) {
-            // System.out.println("infoerng");
-            arr.add(root);
-        }
+        if(root.val==subRoot.val) arr.add(root);//if the node of the main tree has value equal to the root node of the subtree,then add it to the arraylist.
         findRoots(root.left,subRoot);
         findRoots(root.right,subRoot);
     }
+ 
+  // isSameTree is a utility function that takes roots nodes of 2 trees and checks if they are same trees or not.
     public boolean isSameTree(TreeNode root1, TreeNode root2) {
         
         if(root1==null && root2==null) return true;
         if(root1==null || root2==null) return false;
         if(root1.val!=root2.val) return false;
-        // else return true;
         return isSameTree(root1.left,root2.left) && isSameTree(root1.right,root2.right);
     }
 }
