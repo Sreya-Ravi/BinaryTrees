@@ -1,5 +1,5 @@
 // -------------------------------------------------
-// PS0:subtreeOfAnotherTree
+// PS1: subtreeOfAnotherTree
 // -------------------------------------------------
 
 // LINK : https://leetcode.com/problems/subtree-of-another-tree/
